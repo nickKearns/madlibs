@@ -1,0 +1,7 @@
+print("It was a ____ day in Boston and your parents are cooking _____ for breakfast\n")
+print("you run down the stairs and say hi to your sister ______ \n")
+print("Today is ______ and its your first day at your new job at ______\n")
+print("you rush outside to your 1998 _______\n")
+print("But it wont start because the ______ is broken\n")
+print("so you decide to ______ to work")
+print("you get there just in time to find out ______ is your new boss")
