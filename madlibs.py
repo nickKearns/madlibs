@@ -1,4 +1,4 @@
-
+# DECLARING VARIABLES
 noun1 = ""
 verb1 = ""
 noun2 = ""
@@ -9,6 +9,8 @@ adjective1 = ""
 noun4 = ""
 noun5 = ""
 
+
+#FUNCTIONS TO GET EACH TYPE OF SPEECH
 def get_a_noun():
     print("Please enter a noun.")
     given_noun = str(input())
@@ -34,7 +36,7 @@ def get_verb_ing():
 
 # DISPLAY THE STORY WITH BLANKS
 print("Stairway to Heaven Madlib")
-print('''There's a (NOUN)) who's sure
+print('''There's a (NOUN) who's sure
 All that (VERB) is (NOUN)
 And she's (VERB ending in ING) a stairway to (NOUN)
 When she gets there she (VERB)
@@ -56,21 +58,13 @@ adjective1 = get_an_adjective()
 noun4 = get_a_noun()
 noun5 = get_a_noun()
 
-
-#print("Please enter a verb.")
-
-#print("Please enter a noun.")
-
-#print("Please enter a verb ending with ing.")
-
-#print("Please enter a noun.")
-
-#print("Please enter an adjective.")
-
-#print("Please enter a noun.")
-
-#print("Please enter a noun.")
+print("There's a " + noun1 + " who's sure")
+print("All that " + verb1 + " is " + noun2)
+print("And she's " + verb2 + " a stairway to " + noun3)
+print("When she gets there she " + verb3)
+print("If the stores are all " + adjective1)
+print("With a " + noun4 + " she can get what she came for")
+print("Oh oh oh oh and she's buying a stairway to " + noun5)
 
 
-#FUNCTIONS TO GET EACH TYPE OF SPEECH
 
