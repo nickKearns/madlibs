@@ -1,3 +1,4 @@
+import datetime
 #FUNCTIONS TO GET EACH TYPE OF SPEECH
 def get_a_noun():
     print("Please enter a noun.")
@@ -19,16 +20,18 @@ def get_verb_ing():
     given_verb_ing = str(input())
     return given_verb_ing
 
+
+current_date = datetime.datetime.today()
+
+new__completed_story = open("" + str(current_date) + "_story.txt", 'w+')
+
+# OPEN THE STORY TO BE PRINTED
+story = open("mlstory.txt", 'r')
+
 # DISPLAY THE STORY WITH BLANKS
 print("Stairway to Heaven Madlib")
-print('''There's a (NOUN) who's sure
-All that (VERB) is (NOUN)
-And she's (VERB ending in ING) a stairway to (NOUN)
-When she gets there she (VERB)
-If the stores are all (ADJECTIVE)
-With a (NOUN) she can get what she came for
-Oh oh oh oh and she's buying a stairway to (NOUN)''')
-
+print(story.read())
+story.close()
 #COLLECT INPUTS
 noun1 = get_a_noun()
 verb1 = get_a_verb()
@@ -40,13 +43,19 @@ adjective1 = get_an_adjective()
 noun4 = get_a_noun()
 noun5 = get_a_noun()
 
-print("There's a " + noun1 + " who's sure")
-print("All that " + verb1 + " is " + noun2)
-print("And she's " + verb2 + " a stairway to " + noun3)
-print("When she gets there she " + verb3)
-print("If the stores are all " + adjective1)
-print("With a " + noun4 + " she can get what she came for")
-print("Oh oh oh oh and she's buying a stairway to " + noun5)
+line1 = "There's a " + noun1 + " who's sure\n"
+line2 = "All that " + verb1 + " is " + noun2 + "\n"
+line3 = "And she's " + verb2 + " a stairway to " + noun3 + "\n"
+line4 = "When she gets there she " + verb3 + "\n"
+line5 = "If the stores are all " + adjective1 + "\n"
+line6 = "With a " + noun4 + " she can get what she came for\n"
+line7 = "Oh oh oh oh and she's buying a stairway to " + noun5 + "\n"
 
+list_of_lines = [line1, line2, line3, line4, line5, line6, line7]
+for i in list_of_lines:
+        new__completed_story.writelines(i)
 
+new__completed_story.close()
+finished_story = open("" + str(current_date) + "_story.txt", 'r')
+print(finished_story.read())
 
