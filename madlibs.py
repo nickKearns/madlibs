@@ -1,15 +1,3 @@
-# DECLARING VARIABLES
-noun1 = ""
-verb1 = ""
-noun2 = ""
-verb2 = ""
-noun3 = ""
-verb3 = ""
-adjective1 = ""
-noun4 = ""
-noun5 = ""
-
-
 #FUNCTIONS TO GET EACH TYPE OF SPEECH
 def get_a_noun():
     print("Please enter a noun.")
@@ -31,9 +19,6 @@ def get_verb_ing():
     given_verb_ing = str(input())
     return given_verb_ing
 
-
-
-
 # DISPLAY THE STORY WITH BLANKS
 print("Stairway to Heaven Madlib")
 print('''There's a (NOUN) who's sure
@@ -43,9 +28,6 @@ When she gets there she (VERB)
 If the stores are all (ADJECTIVE)
 With a (NOUN) she can get what she came for
 Oh oh oh oh and she's buying a stairway to (NOUN)''')
-
-
-
 
 #COLLECT INPUTS
 noun1 = get_a_noun()
