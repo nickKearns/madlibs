@@ -1,9 +1,3 @@
-from flask import Flask, render_template
-app = Flask(__name__)
-@app.route('/')
-def show_story():
-        return render_template()
-
 import datetime
 #FUNCTIONS TO GET EACH TYPE OF SPEECH
 def get_a_noun():
@@ -26,7 +20,7 @@ def get_verb_ing():
     given_verb_ing = str(input())
     return given_verb_ing
 
-current_date = datetime.today()
+current_date = datetime.datetime.today()
 new__completed_story = open("" + str(current_date) + "_story.txt", 'w+')
 
 # OPEN THE STORY TO BE PRINTED
